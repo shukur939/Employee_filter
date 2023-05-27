@@ -1,0 +1,48 @@
+body{
+    background-color: #f2f3f7;
+}
+.bg{
+    background-color: #fff;
+}
+
+
+///////// Dark mode ///////    
+/// 
+.page-theme{
+    position: relative;
+}
+.toggle-button{
+    background: rgba(233,237,241, 0.1);
+    border-radius: 10px;
+    border:none;
+    padding: 0.5rem;
+    z-index: 1;
+}
+.toggle-button i{
+    padding: 0.3rem;
+}
+.active-btn{
+    position: absolute;
+    background-color: #348fe2;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+}
+
+.active-btn.left {
+    transform: translateX(0%);
+    transition: .5s;
+}
+
+.dark{
+    background-color: #000;
+
+    .active-btn.right {
+        transform: translateX(100%);
+        transition: .5s;
+    }
+    .bg{
+        background-color: #3b3737;
+    }
+    
+}
